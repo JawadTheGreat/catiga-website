@@ -1,8 +1,12 @@
+/* global styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* navbar styles */
 
 .mainNav {
   background-color: #f2f2f4;
@@ -33,11 +37,15 @@
   color: #131313;
 }
 
+/* hero section styles */
+
 .heroSection {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 8em 10em;
+  background-color: #fff;
 }
 
 .bannerTitle {
@@ -47,4 +55,61 @@
 
 .bannerImg {
   width: 20em;
+}
+
+/* styles for wavy background */
+
+.custom-shape-divider-bottom-1715021178 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1715021178 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1715021178 .shape-fill {
+  fill: #ffffff;
+}
+
+/* features section styles*/
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8em;
+  background-color: #d4d4d4;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.featureImg {
+  width: 5em;
+}
+
+.featureTitle {
+  font-weight: 800;
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+.featureDescription {
+  color: gray;
+  font-size: 1.1em;
+  max-width: 15em;
 }
