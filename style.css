@@ -4,16 +4,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* navbar styles */
 
 .mainNav {
+  position: relative;
   background-color: #f2f2f4;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
+  z-index: 2;
 }
 
 .navLogo {
@@ -40,7 +43,6 @@
 /* hero section styles */
 
 .heroSection {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,44 +53,26 @@
 .bannerTitle {
   font-size: 5em;
   font-weight: bold;
+  z-index: 2;
 }
 
 .bannerImg {
-  width: 20em;
-}
-
-/* styles for wavy background */
-
-.custom-shape-divider-bottom-1715021178 {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1715021178 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1715021178 .shape-fill {
-  fill: #ffffff;
+  right: -15em;
+  top: -10em;
+  transform: rotate(-30deg) scale(1.1);
 }
 
 /* features section styles*/
 
 .features {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 8em;
   background-color: #d4d4d4;
+  z-index: 2;
 }
 
 .feature {
