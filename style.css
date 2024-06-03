@@ -4,19 +4,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* navbar styles */
 
 .mainNav {
-  position: relative;
+  position: fixed;
+  width: 100%;
   background-color: #f2f2f4;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
-  z-index: 2;
 }
 
 .navLogo {
@@ -57,16 +57,12 @@
 }
 
 .bannerImg {
-  position: absolute;
-  right: -15em;
-  top: -10em;
-  transform: rotate(-30deg) scale(1.1);
+  color: aquamarine;
 }
 
 /* features section styles*/
 
 .features {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,8 +78,9 @@
   text-align: center;
 }
 
-.featureImg {
-  width: 5em;
+.user-friendly-icon {
+  color: #131313;
+  font-size: 10em;
 }
 
 .featureTitle {
@@ -96,4 +93,20 @@
   color: gray;
   font-size: 1.1em;
   max-width: 15em;
+}
+
+/* products section styles */
+
+#products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 3em 10em;
+}
+
+.item {
+  width: 5em;
+  height: auto;
+  margin: 2em;
 }
