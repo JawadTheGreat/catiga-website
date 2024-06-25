@@ -12,7 +12,7 @@
   font-size: 3em;
 }
 
-/* navbar styles */
+/* navbar */
 
 .mainNav {
   position: fixed;
@@ -46,7 +46,7 @@
   color: #131313;
 }
 
-/* hero section styles */
+/* hero section */
 
 .heroSection {
   display: flex;
@@ -62,18 +62,14 @@
   z-index: 2;
 }
 
-.bannerImg {
-  color: aquamarine;
-}
-
-/* features section styles*/
+/* features section*/
 
 .features {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 8em;
-  background-color: #d4d4d4;
+  background-color: #001477;
   z-index: 2;
   margin-bottom: 5em;
 }
@@ -85,31 +81,39 @@
   text-align: center;
 }
 
-.user-friendly-icon {
-  color: #131313;
-  font-size: 10em;
+.feature-icon {
+  color: #d7d7d7;
+  font-size: 3em;
 }
 
 .featureTitle {
-  font-weight: 800;
+  font-weight: bold;
   font-size: 1.5em;
   margin: 1em;
+  color: #fff;
 }
 
 .featureDescription {
-  color: gray;
+  color: #f2f2f4;
   font-size: 1.1em;
   max-width: 15em;
 }
 
-/* products section styles */
+/* products section */
 
 #products {
+  padding: 0em 10em 3em;
+}
+
+.products-section-header {
+  color: #000;
+}
+
+.product-items {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 3em 10em;
 }
 
 .item {
@@ -144,28 +148,19 @@
   font-weight: bolder;
 }
 
-/* testimonials section styles */
+/* testimonials section */
+/* Footer Section */
 
-#testimonials {
-  padding: 5em;
-  background-color: #001477;
-}
-.section-header {
-  color: #fff;
-  -webkit-text-stroke: 1px solid #000000;
+#footer {
+  padding: 7% 15%;
+  text-align: center;
 }
 
-.carousel-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.social-links {
+  text-decoration: none;
+  color: #000;
 }
 
-.reviews {
-  width: 30em;
-  border: 3px solid #ffffff;
-  border-radius: 20px;
-  padding: 2em;
-  margin: 5em 0;
-  color: #f2f2f4;
+.social-icons {
+  margin: 20px 10px;
 }

@@ -9,6 +9,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/35ba80d060.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="mainNav">
@@ -42,7 +46,7 @@
       </section>
       <section class="features">
         <div class="feature">
-          <i class="fa-solid fa-user-check user-friendly-icon"></i>
+          <i class="fa-solid fa-user-check feature-icon"></i>
           <span class="featureTitle">User-Friendly Interface</span>
           <span class="featureDescription"
             >Designed with intuitive buttons and a clear display, our
@@ -50,17 +54,16 @@
             professionals.</span
           >
         </div>
-        <div class="feature">
-          <img src="assets/return.png" alt="" class="featureImg" />
+        <!-- <div class="feature">
           <span class="featureTitle">Durable Build</span>
           <span class="featureDescription"
             >Constructed with high-quality materials, Catiga calculators are
             built to withstand daily wear and tear, ensuring long-lasting
             performance.</span
           >
-        </div>
+        </div> -->
         <div class="feature">
-          <img src="assets/gift.png" alt="" class="featureImg" />
+          <i class="fa-solid fa-battery-full feature-icon"></i>
           <span class="featureTitle">Energy Efficient</span>
           <span class="featureDescription"
             >Our calculators are designed to be energy efficient, featuring auto
@@ -69,7 +72,7 @@
           >
         </div>
         <div class="feature">
-          <img src="assets/contact.png" alt="" class="featureImg" />
+          <i class="fa-solid fa-dollar-sign feature-icon"></i>
           <span class="featureTitle">Affordable Pricing</span>
           <span class="featureDescription"
             >We offer high-quality calculators at competitive prices, providing
@@ -77,113 +80,87 @@
           >
         </div>
       </section>
-      <h2 class="section-header">Our Products</h2>
       <section id="products">
-        <div class="item">
-          <img src="assets/models/cd-120.png" alt="" class="item-photo" />
-          <p class="item-title">MG-308</p>
-          <p class="item-price">$9.99</p>
-        </div>
-        <div class="item">
-          <img src="assets/models/cd-2600.png" alt="" class="item-photo" />
-          <p class="item-title">MG-308</p>
-          <p class="item-price">$9.99</p>
-        </div>
-        <div class="item">
-          <img src="assets/models/cd-2845.png" alt="" class="item-photo" />
-          <p class="item-title">MG-308</p>
-          <p class="item-price">$9.99</p>
-        </div>
-        <div class="item">
-          <img src="assets/models/cd-722.png" alt="" class="item-photo" />
-          <p class="item-title">MG-308</p>
-          <p class="item-price">$9.99</p>
-        </div>
-        <div class="item">
-          <img src="assets/models/dk-302.png" alt="" class="item-photo" />
-          <p class="item-title">MG-308</p>
-          <p class="item-price">$9.99</p>
-        </div>
-        <div class="item">
-          <img src="assets/models/fs-100mss.png" alt="" class="item-photo" />
-          <p class="item-title">MG-308</p>
-          <p class="item-price">$9.99</p>
-        </div>
-        <div class="item">
-          <img
-            src="assets/models/fs-991essplus.png"
-            alt=""
-            class="item-photo"
-          />
-          <p class="item-title">MG-308</p>
-          <p class="item-price">$9.99</p>
-        </div>
-        <div class="item">
-          <img src="assets/models/fs-991mss.png" alt="" class="item-photo" />
-          <p class="item-title">MG-308</p>
-          <p class="item-price">$9.99</p>
-        </div>
-        <div class="item">
-          <img src="assets/models/mg-308.png" alt="" class="item-photo" />
-          <p class="item-title">MG-308</p>
-          <p class="item-price">$9.99</p>
-        </div>
-        <div class="item">
-          <img src="assets/models/mg-9024.png" alt="" class="item-photo" />
-          <p class="item-title">MG-308</p>
-          <p class="item-price">$9.99</p>
-        </div>
-        <div class="item">
-          <img src="assets/models/mg-9025.png" alt="" class="item-photo" />
-          <p class="item-title">MG-308</p>
-          <p class="item-price">$9.99</p>
+        <h2 class="section-header products-section-header">Our Products</h2>
+        <div class="product-items">
+          <div class="item">
+            <img src="assets/models/cd-120.png" alt="" class="item-photo" />
+            <p class="item-title">MG-308</p>
+            <p class="item-price">$9.99</p>
+          </div>
+          <div class="item">
+            <img src="assets/models/cd-2600.png" alt="" class="item-photo" />
+            <p class="item-title">MG-308</p>
+            <p class="item-price">$9.99</p>
+          </div>
+          <div class="item">
+            <img src="assets/models/cd-2845.png" alt="" class="item-photo" />
+            <p class="item-title">MG-308</p>
+            <p class="item-price">$9.99</p>
+          </div>
+          <div class="item">
+            <img src="assets/models/cd-722.png" alt="" class="item-photo" />
+            <p class="item-title">MG-308</p>
+            <p class="item-price">$9.99</p>
+          </div>
+          <div class="item">
+            <img src="assets/models/dk-302.png" alt="" class="item-photo" />
+            <p class="item-title">MG-308</p>
+            <p class="item-price">$9.99</p>
+          </div>
+          <div class="item">
+            <img src="assets/models/fs-100mss.png" alt="" class="item-photo" />
+            <p class="item-title">MG-308</p>
+            <p class="item-price">$9.99</p>
+          </div>
+          <div class="item">
+            <img
+              src="assets/models/fs-991essplus.png"
+              alt=""
+              class="item-photo"
+            />
+            <p class="item-title">MG-308</p>
+            <p class="item-price">$9.99</p>
+          </div>
+          <div class="item">
+            <img src="assets/models/fs-991mss.png" alt="" class="item-photo" />
+            <p class="item-title">MG-308</p>
+            <p class="item-price">$9.99</p>
+          </div>
+          <div class="item">
+            <img src="assets/models/mg-308.png" alt="" class="item-photo" />
+            <p class="item-title">MG-308</p>
+            <p class="item-price">$9.99</p>
+          </div>
+          <div class="item">
+            <img src="assets/models/mg-9024.png" alt="" class="item-photo" />
+            <p class="item-title">MG-308</p>
+            <p class="item-price">$9.99</p>
+          </div>
+          <div class="item">
+            <img src="assets/models/mg-9025.png" alt="" class="item-photo" />
+            <p class="item-title">MG-308</p>
+            <p class="item-price">$9.99</p>
+          </div>
         </div>
       </section>
       <section id="testimonials">
-        <h2 class="section-header">Our Reviews</h2>
-        <div id="testimonials-carousel" class="carousel slide">
+        <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="reviews">
-                <p class="testimonial-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam totam incidunt corrupti? Temporibus laborum
-                  voluptatem minima velit magni, odio assumenda molestiae
-                  laudantium consectetur fuga. Nam doloremque aliquid officia
-                  facere ex.
-                </p>
-                <em class="testimonail-title">Rahim Mia, Khulna</em>
-              </div>
+              <img src="..." class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <div class="reviews">
-                <p class="testimonial-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam totam incidunt corrupti? Temporibus laborum
-                  voluptatem minima velit magni, odio assumenda molestiae
-                  laudantium consectetur fuga. Nam doloremque aliquid officia
-                  facere ex.
-                </p>
-                <em class="testimonail-title">Rahim Mia, Khulna</em>
-              </div>
+              <img src="..." class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <div class="reviews">
-                <p class="testimonial-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam totam incidunt corrupti? Temporibus laborum
-                  voluptatem minima velit magni, odio assumenda molestiae
-                  laudantium consectetur fuga. Nam doloremque aliquid officia
-                  facere ex.
-                </p>
-                <em class="testimonail-title">Rahim Mia, Khulna</em>
-              </div>
+              <img src="..." class="d-block w-100" alt="..." />
             </div>
           </div>
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#testimonials-carousel"
+            data-bs-target="#carouselExample"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -192,7 +169,7 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#testimonials-carousel"
+            data-bs-target="#carouselExample"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -201,6 +178,22 @@
         </div>
       </section>
     </main>
+    <footer id="footer">
+      <a href="#" class="social-links">
+        <i class="social-icons fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="#" class="social-links">
+        <i class="social-icons fa-brands fa-twitter"></i>
+      </a>
+      <a href="#" class="social-links">
+        <i class="social-icons fa-brands fa-instagram"></i>
+      </a>
+      <a href="#" class="social-links">
+        <i class="social-icons fa-solid fa-envelope"></i>
+      </a>
+
+      <p>© Copyright TinDog</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
