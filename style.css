@@ -149,6 +149,31 @@
 }
 
 /* testimonials section */
+/* testimonials section styles */
+
+#testimonials {
+  padding: 3em 5em;
+  background-color: #001477;
+}
+
+.testimonials-section-header {
+  color: #fff;
+  -webkit-text-stroke: 1px solid #000000;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews {
+  width: 30em;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  padding: 2em;
+  margin: 5em 0;
+  color: #f2f2f4;
+}
 /* Footer Section */
 
 #footer {
