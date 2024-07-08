@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 .section-header {
   text-align: center;
@@ -12,7 +13,7 @@
   font-size: 3em;
 }
 
-/* navbar */
+/* navigation bar */
 
 .mainNav {
   position: fixed;
@@ -32,7 +33,6 @@
 .navList {
   display: flex;
   justify-content: space-between;
-  margin-top: 1em;
 }
 
 .navItem {
@@ -64,7 +64,7 @@
 
 /* features section*/
 
-.features {
+#features {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -149,11 +149,12 @@
 }
 
 /* testimonials section */
-/* testimonials section styles */
 
 #testimonials {
-  padding: 3em 5em;
   background-color: #001477;
+  color: #fff;
+  padding: 1em 0em 3em;
+  overflow: hidden;
 }
 
 .testimonials-section-header {
@@ -161,12 +162,39 @@
   -webkit-text-stroke: 1px solid #000000;
 }
 
-.carousel-inner {
-  display: flex;
-  justify-content: center;
+.carousel {
+  position: relative;
 }
 
-.reviews {
+.slider-btn {
+  font-size: 5em;
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  color: #c4c4c4;
+  position: absolute;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.prev-btn {
+  top: 100px;
+  left: 70px;
+}
+
+.next-btn {
+  top: 100px;
+  right: 70px;
+}
+
+.carousel-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 500vw;
+  transition: 1s ease-in-out;
+}
+
+.review {
   width: 30em;
   border: 3px solid #ffffff;
   border-radius: 20px;
@@ -174,6 +202,7 @@
   margin: 5em 0;
   color: #f2f2f4;
 }
+
 /* Footer Section */
 
 #footer {
