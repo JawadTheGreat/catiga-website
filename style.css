@@ -153,10 +153,39 @@
 
 .product-popup {
   position: absolute;
-  height: 60vh;
+  height: 80vh;
   width: 75vw;
-  margin: 0 5em;
-  background-color: thistle;
+  margin: 0 4.5em;
+  background-color: #bfdafb;
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 0px 5px 50px #232323a7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5em;
+}
+
+.product-info {
+  width: 40%;
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+.product-info-title {
+  font-size: 1.8em;
+}
+.product-info-price {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.order-btn {
+  width: 6em;
+  height: 2.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5em;
+  font-size: 1em;
 }
 
 /* testimonials section */
