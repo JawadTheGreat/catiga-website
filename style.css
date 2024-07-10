@@ -153,6 +153,7 @@
 
 .product-popup {
   position: absolute;
+  display: none;
   height: 80vh;
   width: 75vw;
   margin: 0 4.5em;
@@ -160,11 +161,9 @@
   z-index: 2;
   border-radius: 10px;
   box-shadow: 0px 5px 50px #232323a7;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5em;
-  /* display: none; */
 }
 
 .product-popup-img {

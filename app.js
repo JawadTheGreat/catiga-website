@@ -33,10 +33,16 @@ prevButton.addEventListener("click", () => {
 });
 
 // product popup functionalities
+let productItems = document.querySelectorAll(".item");
 const productPopup = document.querySelector(".product-popup");
 const closePopupButton = document.querySelector(".close-popup-btn");
 
 closePopupButton.addEventListener("click", () => {
   productPopup.style.display = "none";
-  console.log("fdwfdgu");
+});
+
+productItems.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    productPopup.style.display = "flex";
+  });
 });
