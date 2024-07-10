@@ -156,7 +156,7 @@
   height: 80vh;
   width: 75vw;
   margin: 0 4.5em;
-  background-color: #bfdafb;
+  background-color: #e8e8e8;
   z-index: 2;
   border-radius: 10px;
   box-shadow: 0px 5px 50px #232323a7;
@@ -164,6 +164,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 5em;
+  /* display: none; */
+}
+
+.product-popup-img {
+  margin-left: 6em;
 }
 
 .product-info {
@@ -179,13 +184,42 @@
   line-height: 1.5em;
 }
 
-.order-btn {
+.product-info-list {
+  list-style-position: inside;
+}
+
+.order-btn-call,
+.order-btn-mail {
   width: 6em;
   height: 2.5em;
   border-radius: 5px;
   cursor: pointer;
   margin: 0.5em;
   font-size: 1em;
+}
+
+.order-btn-call {
+  width: 5.5em;
+  margin-left: 0;
+}
+
+.close-popup-btn {
+  position: absolute;
+  font-size: 3em;
+  top: 0;
+  right: 8px;
+  cursor: pointer;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .order-btn-call:hover,
+  .order-btn-mail:hover {
+    background-color: #001477;
+    color: #f2f2f4;
+  }
+  .close-popup-btn:hover {
+    color: #ba0000;
+  }
 }
 
 /* testimonials section */

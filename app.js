@@ -31,3 +31,12 @@ prevButton.addEventListener("click", () => {
     slideNumber = slides.length;
   }
 });
+
+// product popup functionalities
+const productPopup = document.querySelector(".product-popup");
+const closePopupButton = document.querySelector(".close-popup-btn");
+
+closePopupButton.addEventListener("click", () => {
+  productPopup.style.display = "none";
+  console.log("fdwfdgu");
+});
