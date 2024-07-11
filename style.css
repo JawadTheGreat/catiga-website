@@ -71,7 +71,6 @@
   padding: 8em;
   background-color: #001477;
   z-index: 2;
-  margin-bottom: 5em;
 }
 
 .feature {
@@ -102,8 +101,12 @@
 /* products section */
 
 #products {
-  padding: 0em 10em 3em;
+  padding: 5em 10em 3em;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .products-section-header {
@@ -156,7 +159,6 @@
   display: none;
   height: 80vh;
   width: 75vw;
-  margin: 0 4.5em;
   background-color: #e8e8e8;
   z-index: 2;
   border-radius: 10px;
@@ -164,6 +166,20 @@
   align-items: center;
   justify-content: space-between;
   padding: 5em;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(50vh);
+    opacity: 1;
+  }
 }
 
 .product-popup-img {

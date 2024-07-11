@@ -33,9 +33,10 @@ prevButton.addEventListener("click", () => {
 });
 
 // product popup functionalities
-let productItems = document.querySelectorAll(".item");
+const productItems = document.querySelectorAll(".item");
 const productPopup = document.querySelector(".product-popup");
 const closePopupButton = document.querySelector(".close-popup-btn");
+const productSection = document.querySelector("#products");
 
 closePopupButton.addEventListener("click", () => {
   productPopup.style.display = "none";
@@ -45,4 +46,10 @@ productItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     productPopup.style.display = "flex";
   });
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target == productSection) {
+    productPopup.style.display = "none";
+  }
 });
