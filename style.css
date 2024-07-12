@@ -16,7 +16,8 @@
 /* navigation bar */
 
 .mainNav {
-  position: fixed;
+  position: relative;
+  z-index: 4;
   width: 100%;
   background-color: #f2f2f4;
   display: flex;
@@ -155,31 +156,22 @@
 /* product popup */
 
 .product-popup {
-  position: absolute;
-  display: none;
+  position: fixed;
+  top: 10vh;
+  bottom: 10vh;
   height: 80vh;
   width: 75vw;
+  z-index: 3;
   background-color: #e8e8e8;
-  z-index: 2;
   border-radius: 10px;
   box-shadow: 0px 5px 50px #232323a7;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5em;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-}
-
-/* Add Animation */
-@keyframes animatetop {
-  from {
-    transform: translateY(-50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(50vh);
-    opacity: 1;
-  }
+  opacity: 0;
+  transform: translateY(-300%);
+  transition: all 0.5s ease-in-out;
 }
 
 .product-popup-img {
