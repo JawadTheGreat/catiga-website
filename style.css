@@ -17,7 +17,6 @@
 
 .mainNav {
   position: relative;
-  z-index: 4;
   width: 100%;
   background-color: #f2f2f4;
   display: flex;
@@ -60,7 +59,6 @@
 .bannerTitle {
   font-size: 5em;
   font-weight: bold;
-  z-index: 2;
 }
 
 /* features section*/
@@ -71,7 +69,6 @@
   justify-content: space-around;
   padding: 8em;
   background-color: #001477;
-  z-index: 2;
 }
 
 .feature {
@@ -134,10 +131,6 @@
   cursor: pointer;
 }
 
-.item:hover {
-  background-color: #c4c4c4;
-}
-
 .item-photo {
   width: 8em;
   height: auto;
@@ -175,6 +168,7 @@
 }
 
 .product-popup-img {
+  max-width: 40%;
   margin-left: 6em;
 }
 
@@ -216,17 +210,6 @@
   top: 0;
   right: 8px;
   cursor: pointer;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .order-btn-call:hover,
-  .order-btn-mail:hover {
-    background-color: #001477;
-    color: #f2f2f4;
-  }
-  .close-popup-btn:hover {
-    color: #ba0000;
-  }
 }
 
 /* testimonials section */
@@ -297,5 +280,27 @@
 }
 
 .social-icons {
-  margin: 20px 10px;
+  font-size: 2em;
+  margin: 30px 20px;
+}
+
+/* hover styles when applicable */
+@media (hover: hover) and (pointer: fine) {
+  .item:hover {
+    background-color: #c4c4c4;
+  }
+
+  .order-btn-call:hover,
+  .order-btn-mail:hover {
+    background-color: #001477;
+    color: #f2f2f4;
+  }
+  .close-popup-btn:hover {
+    color: #ba0000;
+  }
+
+  .social-icons:hover {
+    color: #001477;
+    transform: scale(1.5);
+  }
 }

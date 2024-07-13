@@ -43,6 +43,15 @@ productItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     productPopup.style.transform = "translateY(0)";
     productPopup.style.opacity = "1";
+
+    //change popup modal contents
+    let itemPhotoSrc = item.querySelector(".item-photo").src;
+    let itemTitle = item.querySelector(".item-title").innerText;
+    let itemPrice = item.querySelector(".item-price").innerText;
+
+    productPopup.querySelector(".product-popup-img").src = itemPhotoSrc;
+    productPopup.querySelector(".product-info-title").innerText = itemTitle;
+    productPopup.querySelector(".product-info-price").innerText = itemPrice;
   });
 });
 
