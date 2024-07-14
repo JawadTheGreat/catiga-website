@@ -304,3 +304,84 @@
     transform: scale(1.5);
   }
 }
+
+/* styles for large laptops */
+@media only screen and (max-width: 1440px) {
+  .heroSection {
+    padding-left: 5em;
+  }
+
+  #features {
+    padding: 6em 1em;
+  }
+
+  #products {
+    padding: 3em 5em;
+  }
+
+  .product-popup-img {
+    height: 100%;
+    margin-left: 5em;
+  }
+
+  .product-info {
+    height: 100%;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+}
+
+/* styles for laptops */
+@media only screen and (max-width: 1024px) {
+  .section-header {
+    font-size: 2.5em;
+  }
+  .mainNav {
+    padding: 1em;
+  }
+  .navLogo {
+    width: 12em;
+  }
+  .navItem {
+    margin: 0 0.5em 0 3em;
+    font-size: 1.1em;
+  }
+  .heroSection {
+    padding: 5em 3em;
+  }
+  .bannerTitle {
+    font-size: 4em;
+  }
+
+  #features {
+    padding: 4em 1em;
+  }
+
+  .feature-icon {
+    font-size: 2em;
+  }
+  .featureTitle {
+    font-size: 1.3em;
+  }
+  .featureDescription {
+    font-size: 1em;
+  }
+  .item {
+    width: 15em;
+    height: 15em;
+    margin: 1.5em;
+    padding: 0.5em;
+  }
+
+  .item-photo {
+    max-width: 40%;
+  }
+
+  .social-icons {
+    font-size: 1.5em;
+    margin: 30px 15px;
+  }
+  .copyright-text {
+    font-size: 0.8em;
+  }
+}
