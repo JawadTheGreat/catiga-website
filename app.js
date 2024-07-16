@@ -68,3 +68,18 @@ window.addEventListener("click", (event) => {
     productPopup.style.opacity = "0";
   }
 });
+
+// ***menu icon functionalities***
+
+const menuIcon = document.querySelector(".menu-icon");
+const navList = document.querySelector(".navList");
+
+navList.style.maxHeight = "0px";
+
+menuIcon.addEventListener("click", () => {
+  if (navList.style.maxHeight == "0px") {
+    navList.style.maxHeight = "12em";
+  } else {
+    navList.style.maxHeight = "0px";
+  }
+});
