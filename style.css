@@ -32,12 +32,15 @@
 
 /* menu icon will be used for small screens */
 .menu-icon {
+  font-size: 1.3em;
+  cursor: pointer;
   display: none;
 }
 
 .navList {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navItem {
@@ -409,7 +412,6 @@
   }
   .menu-icon {
     display: block;
-    font-size: 1.3em;
   }
 
   .navList {
@@ -486,5 +488,26 @@
   }
   .review {
     margin: 2em 0;
+  }
+}
+
+/* styles for large phones */
+@media only screen and (max-width: 430px) {
+  .navLogo {
+    width: 7em;
+  }
+
+  #features {
+    flex-direction: column;
+    padding: 1em 0;
+  }
+
+  .feature {
+    padding: 2em 0;
+    width: 100%;
+  }
+  .feature:nth-child(2) {
+    border-top: 1px solid #f2f2f4;
+    border-bottom: 1px solid #f2f2f4;
   }
 }
