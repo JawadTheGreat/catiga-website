@@ -62,6 +62,7 @@ closePopupButton.addEventListener("click", () => {
 });
 
 // close popup modal by clicking outside the modal
+// this section code needs more work!
 window.addEventListener("click", (event) => {
   if (event.target == productSection) {
     productPopup.style.transform = "translateY(-300%)";
@@ -70,7 +71,6 @@ window.addEventListener("click", (event) => {
 });
 
 // ***menu icon functionalities***
-
 const menuIcon = document.querySelector(".menu-icon");
 const navList = document.querySelector(".navList");
 
